@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Coral+Pixels&display=swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+body > main{
+    flex: 1;
+}
+
+header .navbar-brand{
+    font-weight: 700;
+}
+
+aside li{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+aside li span{
+    color: #8696a0;
+    font-weight: 700;
+}
+
+aside li svg{
+    fill: #8696a0;
+}
+
+aside li a{
+    font-family: "Chakra Petch";
+    font-size: 14px;
+    font-weight: 700;
+    color: #8696a0;
+    text-decoration: none;
+}
+
+.container-separator{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed #d9d9d9;
+    width: 65%;
+}
+
+.container-separator-active{
+    width: fit-content;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+
+}
+
+article .second-title{
+    font-size: 24px;
+    font-weight: 100;
+}
+
+article img{
+    width: 25%;
+}
+
+article p{
+    text-align: justify;
+    font-size: 16px;
+}
+
+@media (max-width: 1020px) {
+  svg{
+    display: none;
+  }
+}
