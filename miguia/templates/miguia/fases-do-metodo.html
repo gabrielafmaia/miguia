@@ -1,0 +1,128 @@
+{% extends "miguia/base.html" %} 
+{% block content %}
+<section class=" p-0">
+  <article class="m-auto">
+    <div>
+      <h1 class="m-0">Fases do Método</h1>
+      <p class="second-title m-0">Descubra em que fase você está</p>
+    </div>
+    <!-- Quais são as fases? -->
+    <h2 class="mt-5 mb-3">Quais são as fases?</h2>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Fase #1</button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <p class="m-0">
+              Nela, o foco é dominar os fundamentos essenciais de cada disciplina. É o momento de construir base, estudar matéria nova, aprender conceitos e garantir a compreensão. Você pode estudar os conteúdos pela ordem do seu curso ou pela
+              análise de incidência.
+            </p>
+            <ul class="m-0">
+              <li>Novos assuntos</li>
+              <li>Revisão</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">Fase #2</button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <p class="m-0">
+              O objetivo é se destacar da maioria dos candidatos ao consolidar seu conhecimento e eliminar as lacunas de aprendizado. Nessa fase, inicia-se a resolução de provas antigas, combinando matéria nova com provas/simulados. Você entra na
+              Fase 2 quando já viu mais de 50% da matéria ou os assuntos mais frequentes. É importante intercalar entre ver a matéria e fazer provas e simulados.
+            </p>
+            <ul class="m-0">
+              <li>Novos assuntos</li>
+              <li>Revisão</li>
+              <li>Provas antigas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">Fase #3</button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <p class="m-0">
+              É nessa etapa que você conquista sua aprovação ao dominar os tópicos mais difíceis. O foco principal passa a ser a resolução de provas completas. A partir dos erros cometidos nessas provas, você revisa os temas correspondentes para
+              preencher as lacunas de conhecimento. Você pode optar por fazer provas completas ou resolver provas por matéria, conforme o seu quadro de horários (nesse mesmo horário, o que você errar você já estuda).
+            </p>
+            <ul class="m-0">
+              <li>Provas antigas</li>
+              <li>Revisão e aprofundamento do que for necessário</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="alert alert-danger d-flex align-items-center mt-3 mb-0 gap-3" role="alert">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+      </svg>
+      <div>Lembre-se de que melhor ver 4 assuntos muito bem (para gabaritar), do que 6 ou 7 assuntos para saber mais ou menos.</div>
+    </div>
+    <!-- Quanto tempo passar em cada fase? -->
+    <h2 class="mt-5 mb-3">Quanto tempo passar em cada fase?</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Diariamente (meta de 5 horas/dia)</th>
+          <th scope="col">A longo prazo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>5 horas de matéria nova (aulas + exercícios)</td>
+          <td>Mais longa</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>3 horas de matéria nova + 2 horas de provas antigas</td>
+          <td>Intermediária</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>5 horas de provas antigas</td>
+          <td>Mais curta</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Quando passar de fase? -->
+    <h2 class="mt-5 mb-3">Quando passar de fase?</h2>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <b>Fase #1 para Fase #2:</b> A hora certa de passar de fase é quando você consegue ler a prova e entender os enunciados na maioria das questões. Se você faz uma prova e não sabe identificar o assunto da maioria das questões, fique um pouco
+        mais na Fase 1. Mas se você sabe qual é o assunto, mesmo que não consiga resolver (isso é esperado e você vai aprender como resolver essas questões voltando na teoria), passe para a Fase 2. Inclua provas a partir de agosto/setembro. Não
+        cometa o erro de ir fazer a prova do ENEM ou vestibular sem ter feito pelo menos 5 anos de provas anteriores.
+        <br />
+        <code>DICA: marque o que você está errando (principalmente nas questões de exatas e biologia) e volte para a teoria para fechar essas lacunas.</code>
+      </li>
+      <li class="list-group-item">
+        <b>Fase #2 para Fase #3:</b> Nem todo mundo tem coragem de largar a teoria e focar apenas nas questões e não necessariamente você precisa fazer isso. Passe para a Fase 3 somente quando se sentir totalmente seguro em relação aos conteúdos
+        fáceis e intermediários.
+      </li>
+    </ul>
+    <!-- Como identificar sua fase? -->
+    <h2 class="mt-5 mb-3">Como identificar sua fase?</h2>
+    <p class="mb-3">
+      Para identificar sua fase, é importante a realização dos Simulados Diagnósticos. O ideal é que você faça entre 2-3 simulados, se possível, pois isso ajuda a identificar com mais clareza seus resultados. Após isso, identifique sua fase a partir
+      dos seguintes critérios:
+    </p>
+    <ul class="list-group">
+      <li class="list-group-item"><b>Fase #1:</b> Sem base, dificuldade em conteúdos básicos, menos de 60% de acertos nos simulados.</li>
+      <li class="list-group-item"><b>Fase #2:</b> Domínio razoável dos conceitos básicos e intermediários, mas dificuldade em tópicos mais avançados. Acertos entre 60% e 80% nos simulados.</li>
+      <li class="list-group-item"><b>Fase #3:</b> Domínio avançado dos conteúdos principais, dificuldades em tópicos mais complexos. Acertos acima de 80% nos simulados.</li>
+    </ul>
+  </article>
+</section>
+{% endblock content %}
