@@ -1,3 +1,18 @@
 a {
   text-decoration: none;
+  color: currentColor;
+}
+
+h6 {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+}
+
+.navbar-brand {
+  font-family: "Girassol", serif;
+  font-size: 32px;
+}
+
+i {
+  font-size: 18px;
 }
