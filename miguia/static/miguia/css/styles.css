@@ -1,18 +1,138 @@
+body {
+  background-color: #f9f9f9;
+}
+
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
+}
+
+img {
+  width: 18rem;
+}
+
+footer {
+  color: #9ea3cd;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#sidebar {
+  max-width: 264px;
+  min-width: 264px;
+  transition: all 0.35s ease-in-out;
+  background-color: #9ea3cd;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 0 15px #0000004d;
+  z-index: 1;
+}
+
+#sidebar.collapsed {
+  margin-left: -264px;
+}
+
+.toggler-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0px;
+}
+
+.toggler-btn i {
+  font-size: 1.5rem;
   color: currentColor;
 }
 
-h6 {
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 700;
+.navbar {
+  padding: 1.12rem 1.5rem;
 }
 
-.navbar-brand {
-  font-family: "Girassol", serif;
-  font-size: 32px;
+.sidebar-nav {
+  flex: 1 1 auto;
 }
 
-i {
-  font-size: 18px;
+.sidebar-logo {
+  padding: 16px 48px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.sidebar-logo a {
+  color: white;
+  font-size: 2rem;
+}
+
+.sidebar-header {
+  font-size: 0.75rem;
+  color: white;
+  padding: 24px 24px 6px;
+}
+
+a.sidebar-link {
+  padding: 0.625rem 1.625rem;
+  color: white;
+  position: relative;
+  transition: all 0.35s;
+  display: block;
+}
+
+a.sidebar-link:hover {
+  background-color: #f9f6f630;
+}
+
+.sidebar-link[data-bs-toggle="collapse"]::after {
+  border: solid;
+  border-width: 0 0.075rem 0.075rem 0;
+  content: "";
+  display: inline-block;
+  padding: 2px;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.4rem;
+  transform: rotate(-135deg);
+  transition: all 0.2s ease-out;
+}
+
+.sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.description {
+  margin-left: 10px;
+}
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 0px;
+  color: currentColor;
+}
+
+@media (max-width: 480px) {
+}
+
+.main {
+  min-height: 100vh; /* ocupa altura da tela inteira */
+  width: 100%;
+  display: flex; /* flexbox em coluna */
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* ocupa todo espaço disponível */
+}
+
+footer {
+  color: #9ea3cd;
+  margin-top: auto; /* empurra o footer pro final */
 }
